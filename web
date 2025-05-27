@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnsiteFixItau - Book Your Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styles for better form focus and button hover */
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6; /* Blue-500 */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Blue-500 with transparency */
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* Blue-700 */
+        }
+        .btn-primary:active {
+            background-color: #1e40af; /* Blue-800 */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 shadow-lg rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold mb-2 md:mb-0">OnsiteFixItau</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#services" class="hover:text-blue-200 transition duration-300">Services</a></li>
+                    <li><a href="#booking" class="hover:text-blue-200 transition duration-300">Book Now</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-white py-20 px-4 text-center shadow-md rounded-lg mx-4 mt-6">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-gray-900 mb-6">Expert Car Service, Unbeatable Care</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                Keep your vehicle running smoothly with OnsiteFixItau. We offer comprehensive general car services tailored to your needs.
+            </p>
+            <a href="#booking" class="bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+                Book Your Service Today!
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 px-4 bg-gray-50 rounded-lg mx-4 mt-6 shadow-md">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our General Car Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Standard Logbook Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comprehensive inspection, oil change, filter replacement, fluid checks, and safety inspection according to manufacturer specifications.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Engine Oil & Filter Change</li>
+                        <li>Brake System Check</li>
+                        <li>Tyre Rotation & Pressure Check</li>
+                        <li>Fluid Level Top-ups</li>
+                        <li>Basic Safety Inspection</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Minor Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Ideal for regular maintenance between major services, focusing on essential checks and fluid top-ups.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Oil & Filter Check</li>
+                        <li>Fluid Level Checks</li>
+                        <li>Tyre Pressure Adjustment</li>
+                        <li>Wiper Blade Inspection</li>
+                        <li>Light Check</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Major Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        An extensive service covering all aspects of your vehicle's health, including spark plugs, fuel filters, and more.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>All Minor Service items</li>
+                        <li>Spark Plug Replacement</li>
+                        <li>Fuel Filter Replacement</li>
+                        <li>Air Filter Replacement</li>
+                        <li>Detailed Brake & Suspension Inspection</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Brake System Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Ensure your safety with our thorough brake inspection, pad replacement, and fluid flush services.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Brake Pad Replacement</li>
+                        <li>Rotor Inspection/Resurfacing</li>
+                        <li>Brake Fluid Flush</li>
+                        <li>Brake Line Inspection</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Tyre & Wheel Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Extend the life of your tyres and improve handling with our rotation, balancing, and alignment services.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Tyre Rotation</li>
+                        <li>Wheel Balancing</li>
+                        <li>Tyre Pressure Optimization</li>
+                        <li>Puncture Repair</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Air Conditioning Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Keep cool and comfortable with our A/C system inspection, re-gas, and leak detection services.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>A/C System Inspection</li>
+                        <li>Re-gas & Leak Detection</li>
+                        <li>Cabin Filter Replacement</li>
+                        <li>Vent Cleaning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-16 px-4 bg-white rounded-lg mx-4 mt-6 shadow-md">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Book Your Car Service</h2>
+            <form id="bookingForm" class="space-y-6 p-8 border border-gray-200 rounded-xl shadow-lg">
+                <div>
+                    <label for="customerName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="customerName" name="customerName" required
+                           class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                           class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required
+                           class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="vehicleMake" class="block text-sm font-medium text-gray-700 mb-1">Vehicle Make</label>
+                    <input type="text" id="vehicleMake" name="vehicleMake" required
+                           class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="vehicleModel" class="block text-sm font-medium text-gray-700 mb-1">Vehicle Model</label>
+                    <input type="text" id="vehicleModel" name="vehicleModel" required
+                           class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="serviceDate" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                        <input type="date" id="serviceDate" name="serviceDate" required
+                               class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="serviceTime" class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                        <input type="time" id="serviceTime" name="serviceTime" required
+                               class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="serviceType" class="block text-sm font-medium text-gray-700 mb-1">Type of Service</label>
+                    <select id="serviceType" name="serviceType" required
+                            class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <option value="">Select a service</option>
+                        <option value="Standard Logbook Service">Standard Logbook Service</option>
+                        <option value="Minor Service">Minor Service</option>
+                        <option value="Major Service">Major Service</option>
+                        <option value="Brake System Service">Brake System Service</option>
+                        <option value="Tyre & Wheel Service">Tyre & Wheel Service</option>
+                        <option value="Air Conditioning Service">Air Conditioning Service</option>
+                        <option value="Other">Other (Please specify in notes)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="additionalNotes" class="block text-sm font-medium text-gray-700 mb-1">Additional Notes (optional)</label>
+                    <textarea id="additionalNotes" name="additionalNotes" rows="4"
+                              class="form-input mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                              placeholder="e.g., 'My check engine light is on', 'I need a specific part replaced'"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit"
+                            class="btn-primary bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-md">
+                        Submit Booking
+                    </button>
+                </div>
+            </form>
+
+            <div id="thankYouModal" class="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center hidden">
+                <div class="bg-white p-8 rounded-lg shadow-xl text-center max-w-sm mx-auto">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Thank You!</h3>
+                    <p class="text-gray-700 mb-6">Your booking request has been received. We will contact you shortly to confirm the details.</p>
+                    <button id="closeModal" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-gray-800 text-white rounded-lg mx-4 mt-6 shadow-md">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-4">Have questions? We're here to help!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684L10.5 9.5a1 1 0 01-1.054 1.14l-.454-.152a1 1 0 00-.923.457l-1.414 2.357a1 1 0 00.124 1.265l1.68 1.68a1 1 0 001.265.124l2.357-1.414a1 1 0 00.457-.923l-.152-.454a1 1 0 011.14-1.054l4.916 1.649a1 1 0 00.684.948V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+                    </svg>
+                    <span class="text-xl">0430003884</span>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-xl">shoneelk6@gmail.com</span>
+                </div>
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="text-xl">Sydney, Australia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white p-6 text-center mt-6 rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2024 OnsiteFixItau. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the booking form and the thank you modal
+        const bookingForm = document.getElementById('bookingForm');
+        const thankYouModal = document.getElementById('thankYouModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Add event listener for form submission
+        bookingForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Gather form data (for demonstration purposes)
+            const formData = {
+                customerName: document.getElementById('customerName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                vehicleMake: document.getElementById('vehicleMake').value,
+                vehicleModel: document.getElementById('vehicleModel').value,
+                serviceDate: document.getElementById('serviceDate').value,
+                serviceTime: document.getElementById('serviceTime').value,
+                serviceType: document.getElementById('serviceType').value,
+                additionalNotes: document.getElementById('additionalNotes').value
+            };
+
+            console.log('Booking Form Data:', formData);
+
+            // In a real application, you would send this data to a backend server
+            // using fetch() or XMLHttpRequest.
+            // Example:
+            /*
+            fetch('/api/book-service', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Show success message or redirect
+                thankYouModal.classList.remove('hidden'); // Show the modal
+                bookingForm.reset(); // Clear the form
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Show error message
+                alert('There was an error booking your service. Please try again.');
+            });
+            */
+
+            // For this demonstration, we'll just show the thank you modal immediately
+            thankYouModal.classList.remove('hidden'); // Show the modal
+            bookingForm.reset(); // Clear the form after "submission"
+        });
+
+        // Add event listener to close the modal
+        closeModalButton.addEventListener('click', function() {
+            thankYouModal.classList.add('hidden'); // Hide the modal
+        });
+
+        // Optional: Close modal if clicking outside of it
+        thankYouModal.addEventListener('click', function(event) {
+            if (event.target === thankYouModal) {
+                thankYouModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
